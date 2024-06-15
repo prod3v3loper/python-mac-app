@@ -1,6 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
     ['example.py'],
     pathex=[],
@@ -14,6 +13,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
@@ -36,6 +36,7 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
+
 app = BUNDLE(
     exe,
     name='example.app',

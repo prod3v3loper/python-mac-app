@@ -11,19 +11,37 @@ We need NodeJS and Python.
 - https://nodejs.org/
 - https://www.python.org/
 
+### Check it out
+
+- For `npm` get a look here: [Best practice](https://gist.github.com/prod3v3loper/979fd70264319e86ffff037996d3d7e7)
+- For `python` get a look here: [Best practice](https://gist.github.com/prod3v3loper/3be347af91e3eb4fb7fa23f899719c3c)
 
 ## Then extensions
 
 For NPM:
+
 ```bash
 $ npm install -g create-dmg
 ```
-Best practice look here for global npm packages: [Best practice global NPM packages](https://gist.github.com/prod3v3loper/979fd70264319e86ffff037996d3d7e7) 
 
 For python:
 
 ```bash
 $ pip3 install pyinstaller
+```
+
+OR
+
+```bash
+$ pip3 install -r requirements.txt
+```
+
+You can list your packages here:
+
+`requirements.txt`
+
+```plaintext
+pyinstaller 
 ```
 
 ## One file app
@@ -167,7 +185,9 @@ a = Analysis(
     cipher=block_cipher,
     noarchive=False
 )
+
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
+
 exe = EXE(
     pyz,
     a.scripts,
@@ -180,6 +200,7 @@ exe = EXE(
     upx=True,
     console=False
 )
+
 coll = COLLECT(
     exe,
     a.binaries,

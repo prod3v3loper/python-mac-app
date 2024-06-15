@@ -24,7 +24,7 @@ GitHub has other great markdown features as well, go [here](https://help.github.
 
 Most of the time, when webpack does not work correctly, it might be a configuration issue.
 
-If you are still having difficulty after looking over your configuration carefully, please post a question to [StackOverflow with the docker tag](http://stackoverflow.com/tags/python-mac-app). This way you help others to help you.
+If you are still having difficulty after looking over your configuration carefully, please post a question to [StackOverflow with the python tag](http://stackoverflow.com/tags/python-mac-app). This way you help others to help you.
 
 > You should also have Google search and other plattforms included.
 
